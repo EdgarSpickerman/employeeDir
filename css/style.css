@@ -1,3 +1,140 @@
-﻿body
-{
+﻿/*General Styles*/
+*{
+    box-sizing:border-box;
+}
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #5c5c5c;
+}
+.photo {
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    padding: .5%;
+    margin: auto auto;
+}
+.border {
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+}
+p{
+    font-size:0.8rem;
+    text-align:center;
+}
+.email,.location{
+    font-size:0.75rem;
+}
+.info{
+    margin:auto auto;
+}
+
+/*Header styles*/
+h1,.search {
+    margin: auto 0;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+}
+h1 {
+    font-size: 1em;
+    margin: 1em 0;
+    color: #171717;
+}
+
+/*Employee Styles*/
+#directory{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.employee{
+    min-width:288px;
+    display:flex;
+    flex:1 0 30%;
+    margin:.5%;
+    padding: 1.5%;
+}
+.name,h1{
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:1.3rem;
+}
+.name{
+    color: #000;
+}
+.location{
+    text-transform:capitalize;
+}
+
+/*Overlay Styles*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.85); 
+    z-index: 1000;
+    cursor: pointer;
+}
+.modual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: white;
+    color: black;
+    text-align:center;
+    padding: 1% 3%;
+}
+.btm-border {
+    padding:20px 0;
+    border-bottom:1px solid #E8E8E8;
+}
+.address{
+    text-transform:capitalize;
+}
+.modual a {
+    position: absolute;
+    padding: 15px;
+}
+a.previous,
+a.next {
+    top: 155px;
+}
+a.close{
+    top:0;
+    right:0;
+}
+a.next {
+    right:5px;
+}
+a.previous{
+    left:5px;
+}
+/*media queries*/
+@media screen and (min-width: 760px) {
+    .photo{
+        width:100px;
+        height:100px;
+    }
+    .email, .location {
+        font-size: 0.8rem;
+    }
+    .info {
+        margin: auto auto;
+    }
+    .photo-lrg{
+        width:150px;
+        height:150px;
+    }
+    
 }
