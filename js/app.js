@@ -61,14 +61,14 @@
                 let searchResults = {};
                 let overlay = '';
                 let html = '';
-                html += '<div class="employee ' + i + ' border"><img class="photo"src="' + data.results[i].picture.large + '"/></p>';
+                html += '<div class="employee ' + i + ' border"><img class="photo"src="' + data.results[i].picture.large + '"/>';
                 html += '<div class="info"><p class="name">' + data.results[i].name.first + ' ' + data.results[i].name.last + '</p>';
                 html += '<p class="email">' + data.results[i].email + '</li>';
                 html += '<p class="location">' + data.results[i].location.city + ', ' + data.results[i].location.state + '</p></div></div>';
                 overlay += '<div class="modual border"><img  class="overlay photo photo-lrg" src="' + data.results[i].picture.large + '">';
                 overlay += '<p class="overlay name">' + data.results[i].name.first + ' ' + data.results[i].name.last + '</p>';
-                overlay += '<p class="overlay email">' + data.results[i].email + '</p>';
-                overlay += '<p class="overlay username btm-border">' + data.results[i].login.username+'</p>';
+                overlay += '<p class="overlay username">' + data.results[i].login.username + '</p>';
+                overlay += '<p class="overlay email btm-border">' + data.results[i].email + '</p>';
                 overlay += '<p class="overlay cell">' + data.results[i].cell + '</p>';
                 overlay += '<p class="overlay address">' + data.results[i].location.street +' '+ data.results[i].location.city + ', ';
                 overlay += data.results[i].location.state + ' ' + data.results[i].location.postcode + '</p>';

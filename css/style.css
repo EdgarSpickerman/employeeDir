@@ -1,14 +1,17 @@
 ﻿/*General Styles*/
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
+
 body {
     max-width: 90%;
     margin: 0 auto;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #5c5c5c;
+    background-color: aliceblue;
 }
+
 .photo {
     border-radius: 100%;
     width: 75px;
@@ -16,29 +19,41 @@ body {
     padding: .5%;
     margin: auto auto;
 }
+
 .border {
-    border: 2px solid #E8E8E8;
+    border: 2px solid #888888;
     border-radius: 10px;
 }
-p{
-    font-size:0.8rem;
-    text-align:center;
+
+p {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+    text-align: center;
 }
-.email,.location{
-    font-size:0.75rem;
+
+.email, .location {
+    font-size: 12px;
+    font-size: 0.75rem;
 }
-.info{
-    margin:auto auto;
+
+.info {
+    margin: auto auto;
 }
 
 /*Header styles*/
-h1,.search {
+h1, .search {
     margin: auto 0;
 }
-header{
-    display:flex;
-    justify-content:space-between;
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
+
 h1 {
     font-size: 1em;
     margin: 1em 0;
@@ -46,28 +61,47 @@ h1 {
 }
 
 /*Employee Styles*/
-#directory{
-    display:flex;
+#directory {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
-.employee{
-    min-width:288px;
-    display:flex;
-    flex:1 0 30%;
-    margin:.5%;
+
+.employee {
+    min-width: 288px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    margin: .5%;
     padding: 1.5%;
+    background-color: white;
 }
-.name,h1{
-    text-transform:uppercase;
-    font-weight:700;
-    font-size:1.3rem;
+
+.employee:hover {
+    transform: scale(1.1);
 }
-.name{
+
+.name, h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20.8px;
+    font-size: 1.3rem;
+}
+
+.name {
     color: #000;
 }
-.location{
-    text-transform:capitalize;
+
+.location {
+    text-transform: capitalize;
 }
 
 /*Overlay Styles*/
@@ -80,61 +114,72 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.85); 
+    background-color: rgba(0,0,0,0.85);
     z-index: 1000;
     cursor: pointer;
 }
+
 .modual {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     background-color: white;
     color: black;
-    text-align:center;
+    text-align: center;
     padding: 1% 3%;
 }
+
 .btm-border {
-    padding:20px 0;
-    border-bottom:1px solid #E8E8E8;
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
 }
-.address{
-    text-transform:capitalize;
+
+.address {
+    text-transform: capitalize;
 }
+
 .modual a {
     position: absolute;
     padding: 15px;
 }
+
 a.previous,
 a.next {
     top: 155px;
 }
-a.close{
-    top:0;
-    right:0;
+
+a.close {
+    top: 0;
+    right: 0;
 }
+
 a.next {
-    right:5px;
+    right: 5px;
 }
-a.previous{
-    left:5px;
+
+a.previous {
+    left: 5px;
 }
 /*media queries*/
 @media screen and (min-width: 760px) {
-    .photo{
-        width:100px;
-        height:100px;
+    .photo {
+        width: 100px;
+        height: 100px;
     }
+
     .email, .location {
         font-size: 0.8rem;
     }
+
     .info {
         margin: auto auto;
     }
-    .photo-lrg{
-        width:150px;
-        height:150px;
+
+    .photo-lrg {
+        width: 150px;
+        height: 150px;
     }
-    
 }
