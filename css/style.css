@@ -169,17 +169,17 @@ a.previous {
         width: 100px;
         height: 100px;
     }
-
     .email, .location {
         font-size: 0.8rem;
     }
-
     .info {
         margin: auto auto;
     }
-
     .photo-lrg {
         width: 150px;
         height: 150px;
+    }
+    .employee {
+        max-width: 32%;
     }
 }
